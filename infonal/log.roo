@@ -1,0 +1,11 @@
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-03-29 22:59:35
+project --topLevelPackage com.infonal.web --projectName infonal --java 7 --packaging JAR
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-03-29 22:59:46
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-03-29 22:59:50
+web mvc setup
+jpa setup --provider HIBERNATE --database MYSQL
+entity jpa --class ~.domain.MyUser
+field string --fieldName name --notNull --sizeMin 2 --class ~.domain.MyUser
+field string --fieldName surname --notNull --sizeMin 2 --class ~.domain.MyUser
+field string --fieldName phoneNumber --notNull --sizeMin 2 --class ~.domain.MyUser
+web mvc all --package ~.web
